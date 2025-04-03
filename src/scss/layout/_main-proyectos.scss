@@ -1,3 +1,57 @@
 @use '../core/variables' as vars;
 
 
+.button--border {
+    border: 1px solid white;
+    
+    
+}
+.color_proyectos {
+    background-color: vars.$color-main ;
+    
+}
+
+.texto_proyectos {
+    color: vars.$color-text-white;
+}
+
+.tittle_proyectos {
+    margin-left: 83px;
+    font-weight:bold;
+    color: vars.$color-text-white;
+    font-size: 16px  
+    
+    
+}
+
+.Box_main_proyectos1 {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.proyectosimg {
+    max-width:100%
+    
+    
+}
+
+.texto_proyectos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10%;
+}
+
+.Branding{
+    font-size: 14px;
+    color: #bdb0ec;
+}
+
+.contenedor_button {
+    display: flex;
+    justify-content: center;
+}
