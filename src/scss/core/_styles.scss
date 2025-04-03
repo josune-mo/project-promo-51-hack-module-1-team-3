@@ -1,3 +1,5 @@
+@use '../core/variables' as vars;
+
 html {
     font-family: "Montserrat", sans-serif;
 }
@@ -16,4 +18,10 @@ h3 {
 
 p {
     font-size: 1rem;
+}
+
+.button {
+    background-color: vars.$color-main;
+    color: vars.$color-text-white;
+    padding: 1rem; 
 }
