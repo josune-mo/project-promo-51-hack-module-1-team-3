@@ -1,1 +1,10 @@
 @use '../core/variables' as vars;
+
+.main-contact{
+    width:80%;
+    margin:auto;
+    &__title{
+        font-weight:500;
+        color:vars.$color-title-dark;
+    }
+}
