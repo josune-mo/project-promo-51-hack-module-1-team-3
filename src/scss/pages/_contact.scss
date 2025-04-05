@@ -8,10 +8,25 @@
     &__title{
         font-weight:500;
         color:vars.$color-title-dark;
+        margin-bottom: 25px;
     }
     &__map{
-        margin:25px 0;
+        margin-top:25px;
         width:100%;
+        display:block;
+    }
+    @media all and (min-width: 768px) {
+        margin: 10px 10%;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        &__section-form{
+            padding-right:15px;
+        }
+        &__map {
+            padding-left:15px;
+            height:100%;    
+        }
+
     }
 }
 
