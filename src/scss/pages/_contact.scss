@@ -16,7 +16,7 @@
         display:block;
     }
     @media all and (min-width: 768px) {
-        margin: 10px 10% 35px 10%;
+        margin: 10px 10%;
         display:grid;
         grid-template-columns: 1fr 1fr;
         &__section-form{
