@@ -1,1 +1,38 @@
 @use '../core/variables' as vars;
+
+.hero__section-1 {
+    text-align: center;
+    padding: 2rem 2rem 6rem 2rem;
+
+}
+
+.hero__section-1-AdaDev {
+    color: vars.$color-main;
+}
+
+.hero__section-2 {
+    text-align: center;
+}
+
+.hero__section-3 {
+    text-align: center;
+    padding: 3rem;
+}
+
+.hero__section-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 3rem;
+}
+
+.hero__section-4-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+

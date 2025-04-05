@@ -1,1 +1,62 @@
 @use '../core/variables' as vars;
+
+.footer__ready {
+    background-image: url("../images/mar.jpg");
+    background-color: black;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-top: 13%;
+        margin-bottom: 1rem;
+        color: vars.$color-text-white;
+    }
+
+}
+
+.footer {
+    background-color: #0f0f0f;
+    background-size: cover;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    
+
+    img {
+        width: 150px;
+    }
+}
+.footer__nav {
+    display: none;
+}
+
+@media all and (min-width: 768px) {
+    .footer {
+        background-image: url("../images/4.svg");
+        background-color: white;
+        z-index: 1;
+        height: 40vh;
+        display: flex;
+
+    }
+    .footer__ready {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        z-index: 0;
+        position: relative;
+        bottom: -100px;
+        height: 300px;
+        background-position-y: center;
+        
+    }
+.footer__nav {
+    display: flex;
+    width: 50%;
+}
+}
