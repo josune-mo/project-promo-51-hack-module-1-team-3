@@ -17,6 +17,7 @@
         font-size: 1.8rem;
         font-weight: 600;
         color: vars.$color-text-white;
+        max-width: 370px;
     }
     .button {
         display: none;
@@ -43,7 +44,7 @@
 
 
 @media all and (min-width: 768px) {
-    .footer {
+    .footer__foter {
         background-image: url("../images/olas-negras.png");
         background-color: white;
         z-index: 0;
