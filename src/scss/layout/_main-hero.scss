@@ -2,16 +2,22 @@
 
 .hero__section-1 {
     text-align: center;
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 2rem;
 
 }
 
 .hero__section-1-AdaDev {
     color: vars.$color-main;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: vars.$color-main;
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.5rem;
 }
 
 .hero__section-2 {
     text-align: center;
+    padding: 3rem;
 }
 
 .hero__section-3 {
@@ -24,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 2rem;
     gap: 3rem;
 }
 
@@ -33,6 +39,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 2rem;
     gap: 2rem;
+}
+
+.hero__section-4-article h3 {
+    color: vars.$color-main;
+}
+
+.hero__section-4-article p {
+    display: none;
+}
+
+.hero__section-4-article a {
+    color: vars.$color-text-dark;
+    text-decoration-style: wavy;
+    text-decoration-color: vars.$color-main;
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.3rem;
+}
+
+@media all and (min-width: 768px) {
+    .hero__section-1 {
+        padding: 6rem 0 3rem 0;
+    }
+
+    .hero__section-3 {
+        padding: 3rem 8rem 3rem 8rem;
+    }
+
+    .hero__section-4 {
+        flex-direction: row;
+        padding: 4rem;
+        gap: 1rem;
+    }
+
+    .hero__section-4-article p {
+        display: inline-block;
+    }
+
+    .hero__section-4-article {
+        text-align: left;
+        width: 30%;
+    }
 }
 
