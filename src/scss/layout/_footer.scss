@@ -1,21 +1,26 @@
 @use '../core/variables' as vars;
 
-.footer__ready {
+.footer__listas {
     background-image: url("../images/mar.jpg");
     background-color: black;
     background-size: cover;
-    height: 30vh;
+    background-position-y: center;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    width: 100%;
+    margin-top: 1rem;
     p {
         font-size: 1.8rem;
         font-weight: 600;
-        margin-top: 13%;
-        margin-bottom: 1rem;
         color: vars.$color-text-white;
     }
-
+    .button {
+        display: none;
+    }
 }
 
 .footer {
@@ -25,6 +30,7 @@
     display: flex;
     align-items: center;
     padding: 2rem;
+    width: 100%;
     
 
     img {
@@ -35,28 +41,48 @@
     display: none;
 }
 
+.button:hover {
+    background-color: black;
+}
 @media all and (min-width: 768px) {
     .footer {
         background-image: url("../images/olas-negras.png");
         background-color: white;
-        z-index: 1;
+        z-index: 0;
         height: 40vh;
         display: flex;
+        padding-top: 125px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        justify-content: space-between;
 
     }
-    .footer__ready {
+    .footer__listas {
+        margin-bottom: -150px;
         margin-left: auto;
         margin-right: auto;
         width: 80vw;
-        z-index: 0;
+        z-index: 1;
         position: relative;
-        bottom: -100px;
-        height: 300px;
-        background-position-y: center;
-        
+        height: 300px;       
+        padding-bottom: 0;
+
+        .button {
+            display: block;
+            margin-top: 1rem;
+        }
     }
 .footer__nav {
     display: flex;
     width: 50%;
+    list-style-type: none;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+    a:hover {
+        color: vars.$color-main;
+    }
 }
 }
