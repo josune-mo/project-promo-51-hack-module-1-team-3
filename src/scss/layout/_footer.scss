@@ -2,7 +2,6 @@
 
 .footer__listas {
     background-image: url("../images/mar.jpg");
-    background-color: black;
     background-size: cover;
     background-position-y: center;
     height: 20vh;
@@ -13,6 +12,10 @@
     padding-bottom: 3rem;
     width: 100%;
     margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+
     p {
         font-size: 1.8rem;
         font-weight: 600;
@@ -24,7 +27,7 @@
     }
 }
 
-.footer_footer {
+.footer__footer {
     background-color: #0f0f0f;
     background-size: cover;
     height: 15vh;
@@ -34,13 +37,14 @@
     width: 100%;   
     height: auto;
     }
-    .footer__logo {
+    .footer__logo{
         width: 100px;
         height: auto;
     }
        
 .footer__nav {
     display: none;
+    background-color: black;
 }
 
 
@@ -71,6 +75,9 @@
         .button {
             display: block;
             margin-top: 1rem;
+        }
+        p {
+            font-size: 1.5rem;
         }
     }
 .footer__nav {
