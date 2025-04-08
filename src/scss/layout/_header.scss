@@ -1,2 +1,56 @@
 @use '../core/variables' as vars;
 
+.header{
+  padding: 24px;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  &__logo{
+    width:115px;
+    height:37px;
+    margin-top:10px;
+    display:block;
+  }
+  &__nav {
+    display:none;
+  }
+  &__button {
+    display:none;
+  }
+  &__hamburguer{
+    width:32px;
+    display:block;
+    margin-top:17px;
+  }
+
+  @media all and (min-width: 768px) {
+    &__hamburguer{
+      display:none;
+    }
+    &__nav {
+      display:block;
+      width:450px;
+
+    }
+    &__button {
+      display:block;
+      align-items: flex-end;
+    }
+  } 
+} 
+
+.nav-list {
+  display:flex;
+  justify-content: space-around;
+  list-style-type: none;
+  &__link{
+    color:vars.$color-text-dark;
+    text-decoration:none;
+    height:50px;
+    align-items:center;
+    display:flex;
+  }
+  &__link:hover{
+    color:vars.$color-main;
+  }
+}
