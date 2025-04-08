@@ -13,7 +13,7 @@
 
 .proyectos__title {
     color: vars.$color-text-white;
-    margin-left: 83px;
+    margin-left: 23px;
     font-weight:bold;
     font-size: 16px  
 }
@@ -37,7 +37,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 520px;
-    padding-top: 10%;
+    padding-top: 10px;
     color: vars.$color-text-white;
 }
 
@@ -62,10 +62,15 @@
     /* Desk */
 @media screen and (min-width: 1024px){
 
+
+    .proyectos__title   {
+        padding-left: 90px;
+    }
+
     .proyectos__text{
         padding: 25px;
         padding-left: 110px;
-        width: 50%;
+        width: 70%;
         display: grid;
         display: block;
         font-size: 40px;
