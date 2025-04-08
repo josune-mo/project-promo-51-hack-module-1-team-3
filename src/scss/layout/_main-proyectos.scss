@@ -2,51 +2,46 @@
 
 
 .button--border {
-    border: 1px solid white;
-    
-    
+    border: 1px solid white;  
 }
-.color_proyectos {
+
+.proyectos {
     background-color: vars.$color-main ;
-    
+    padding-bottom: 60px;
+    padding-top: 60px;  
 }
 
-.texto_proyectos {
+.proyectos__title {
     color: vars.$color-text-white;
-}
-
-.tittle_proyectos {
     margin-left: 83px;
     font-weight:bold;
-    color: vars.$color-text-white;
     font-size: 16px  
-    
-    
 }
 
-.Box_main_proyectos1 {
+
+
+.proyectos__box {
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
 }
 
-.proyectosimg {
-    max-width:100%
-    
-    
+.proyectos__img {
+    max-width:100% 
 }
 
-.texto_proyectos {
+.proyectos__box-text {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 520px;
     padding-top: 10%;
+    color: vars.$color-text-white;
 }
 
-.Branding{
+.proyectos__subtitle{
     font-size: 14px;
     color: #bdb0ec;
 }
@@ -54,11 +49,11 @@
 .contenedor_button {
     display: flex;
     justify-content: center;
+    margin-top: 60px;  
 }
 
-.texto_proyectos_entrada {
-   display: none;     
-        
+.proyectos__text {
+   display: none;             
 }
 
 
@@ -67,7 +62,7 @@
     /* Desk */
 @media screen and (min-width: 1024px){
 
-    .texto_proyectos_entrada{
+    .proyectos__text{
         padding: 25px;
         padding-left: 110px;
         width: 50%;
@@ -75,41 +70,45 @@
         display: block;
         font-size: 40px;
         color: white
-        
     }
 
-
-    .contenedor_proyectos {
+    .proyectos__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
       
-      .Box_main_proyectos1 {
+      .proyectos__box {
         display: flex;
         flex-direction: column;
       }
-      
-      .proyectosimg {
+
+      .proyectos__img {
         width: 80%;
         height: auto;
         display: block;
       }
       
-      .texto_proyectos {
+      .proyectos__box-text {
         display: flex;
         justify-content: space-between;
         width: 80%;
+        max-width: 80%;
       }
-      
-    
+
       .contenedor_button {
         display: flex;
         justify-content: start;
         padding-top: 25px;
         padding-left: 110px;
-       
       }
-      
+    
+      .proyect__text-style  {
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: white;
+        text-decoration-thickness: 0.1rem;
+        text-underline-offset: 0.5rem;
+    }
       
 }
 
